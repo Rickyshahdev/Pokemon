@@ -19,7 +19,7 @@ $ (() => {
    $('.pics').children().eq(currentImgIndex).show()
 
  })
- 
+
 
 for (let i = 1; i <= 120; i++) {
 // loop for iterating over the url
@@ -34,26 +34,23 @@ for (let i = 1; i <= 120; i++) {
    (data) => {
 
     const pokemon = []
-    pokemon['image'] = data.sprites['front_default']
-    pokemon['name'] = data.name;
-    pokemon['move1']= data.moves[0].move.name
-    pokemon['move2']= data.moves[1].move.name
-    pokemon['move3']= data.moves[2].move.name
-    // pokemon['experience']= data.base_experience;
-  // console.log(data.moves[1].move.name);
-// console.log(data);
+
+// console.log(pokemon);
 const showPokemon = () => {
-  $image = $('<img class ="pokeball">').attr('src', pokemon.image)
+  $image = $('<img class ="front">').attr('src', data.sprites['front_default'])
   $('#list').append($image)
-  $name = $('<div class = name>').text('NAME: ' + pokemon.name)
+  // console.log((data.sprites['front_default']));
+  $name = $('<div class = name>').text('NAME: ' + data.name)
 $('#list').append($name)
+// console.log(data.name);
   // $experience = $('<li class = experience>').text('expo ' + pokemon.experience)
   // $('#list').append($experience)
- $move1 = $('<li class = moves>').text('Attack: ' + pokemon.move1 +',  '+pokemon.move2)
+ $move1 = $('<li class = moves>').text('Attack: '+(data.moves[0].move.name) +', '+(data.moves[1].move.name))
  $('#list').append($move1)
+   // console.log(data.moves[1].move.name);
  // $move2 = $('<li class = moves>').text( pokemon.move2)
  // $('#list').append($move2)
- $move3 = $('<li class = moves>').text('Special Attack: '+pokemon.move3)
+ $move3 = $('<li class = moves>').text('Special Attack: '+ (data.moves[2].move.name))
  $('#list').append($move3)
 }
 
