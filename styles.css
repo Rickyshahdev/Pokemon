@@ -1,7 +1,7 @@
 
-* {
+/* * {
   border: 1px solid gold;
-}
+} */
 .text-wrap {
   color: rgb(100,233,200);
   width: 100%;
@@ -13,9 +13,9 @@
   margin-left: 10%;
 }
 .text-wrap h2 {
-  font-size: 3vw;
-  margin-top: -5%;
-  margin-left: 15%;
+  font-size: 2.5vw;
+  margin-top: -3%;
+  margin-left: 16%;
   color: rgb(253,207,88);
 }
 .main-content{
@@ -27,7 +27,7 @@ justify-content: space-around;
 flex-wrap: wrap;
 }
 .banner >img {
-  width: 90%;
+  width: 100%;
 
 }
 .container {
@@ -37,11 +37,12 @@ flex-wrap: wrap;
 .battleGround > img {
   width:100%;
 }
-#pokedex {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+#list {
+  list-style: none;
+  column-count: 3;
+  background-color: rgba(253,207,88,0.2);
+
 }
-#pokedex >img {
-  width: 20%;
+#list >img {
+  width: 50%;
 }
