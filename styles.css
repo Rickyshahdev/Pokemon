@@ -37,6 +37,11 @@ flex-wrap: wrap;
 .battleGround > img {
   width:100%;
 }
-.pokedex {
+#pokedex {
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#pokedex >img {
+  width: 20%;
 }

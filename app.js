@@ -6,7 +6,7 @@
 $ (() => {
 
 
-for (var i = 0; i < 150; i++) {
+for (var i = 1; i < 150; i++) {
 
 
  $.ajax({
@@ -21,10 +21,20 @@ for (var i = 0; i < 150; i++) {
     pokemon['name'] = data.name;
     pokemon['id']= data.id;
     pokemon['image'] = data.sprites['front_default']
-console.log(pokemon);
+// console.log(data);
+const displayPokemon = () => {
+  $image = $('<img>').attr('src', pokemon.image)
+  $('#pokedex').append($image)
+  $name = $('<li class = name>').text(pokemon.name)
+$('#pokedex').append($name)
+  $id = $('<li class = id>').text(pokemon.id)
+  $('#pokedex').append($id)
+
+}
+
+displayPokemon()
 
 })
-
 
 }
 
