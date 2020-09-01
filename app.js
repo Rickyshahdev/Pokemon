@@ -5,10 +5,24 @@
 // }
 $ (() => {
 
+  let currentImgIndex = 0;
+  let numOfImages = $('.pics').children().length-1;
+  // console.log(numOfImages);
+ $('.pics').on('click', () => {
+   $('.pics').children().eq(currentImgIndex).hide()
+   if (currentImgIndex < numOfImages) {
 
+   currentImgIndex ++;
+}else {
+  currentImgIndex = 0
+}
+   $('.pics').children().eq(currentImgIndex).show()
 
-for (let i = 1; i <= 30; i++) {
+ })
+ 
 
+for (let i = 1; i <= 120; i++) {
+// loop for iterating over the url
 
  $.ajax({
 
@@ -43,10 +57,7 @@ $('#list').append($name)
  $('#list').append($move3)
 }
 
-$('.pokeball').on('click', (event) =>{
-  // console.log($(event.currentTarget));
-  console.log('hi');
-  })
+
 
 
 showPokemon()
