@@ -34,13 +34,12 @@ for (let i = 1; i <= 120; i++) {
    (data) => {
 
     const pokemon = []
-
 // console.log(pokemon);
 const showPokemon = () => {
-  $image = $('<img class ="front">').attr('src', data.sprites['front_default'])
+  $image = $('<img class ="front">').attr('src', data.sprites.front_default)
   $('#list').append($image)
   // console.log((data.sprites['front_default']));
-  $name = $('<div class = name>').text('NAME: ' + data.name)
+  $name = $('<div class = name>').text('NAME: ' + data.name).attr('id', data.name)
 $('#list').append($name)
 // console.log(data.name);
   // $experience = $('<li class = experience>').text('expo ' + pokemon.experience)
