@@ -4,7 +4,7 @@
   font-family: 'Shadows Into Light', sans serif;
 }
 .container {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
@@ -71,13 +71,10 @@ flex-wrap: wrap;
 .battleground > img{
   width: 100%;
 }
-.next {
-display: flex;
-justify-content: space-between;
-}
+
 @media (min-width: 600px) {
   .container{
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
   }
 }
