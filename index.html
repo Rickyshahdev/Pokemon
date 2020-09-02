@@ -1,41 +1,84 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <meta charset="utf-8">
-    <link rel="stylesheet" href="list.css">
-    <title>Pokemon List</title>
-      <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <script src="list.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Pokemon</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="app.js" charset="utf-8"></script>
   </head>
   <body>
+    <div class="container">
+    <!-- main content -->
+      <div class="main-content">
 
-    <div class="gallery">
-      <h2>POKEMON GALLERY</h2>
+        <div class="banner">
+          <img src="./img/20997.jpg" alt="pokemon">
+        <div class="text-wrap">
+        <img src="./img/download (1).png" alt="">
+        <h2>Gotta catch 'em all</h2>
+      </div>
     </div>
-     <div id="list">
+    <div class="world">
+      <h2>Pokemon World</h2>
+    </div>
+    <div class="pics">
+          <img src="./img/21018.jpg" alt="pokemon1">
+          <img src="./img/21010.jpg" alt="pokemon2">
+          <img src="./img/20993.jpg" alt="pokemon3">
+          <img src="./img/20999.jpg" alt="pokemon4">
+          <img src="./img/21005.jpg" alt="pokemon5">
+          <img src="./img/20994.jpg" alt="pokemon6">
+          <img src="./img/21025.jpg" alt="pokemon7">
+          <img src="./img/20996.jpg" alt="pokemon8">
+          <img src="./img/21000.jpg"alt="pokemon9">
+          <img src="./img/21007.png" alt="pokemon10">
+          <img src="./img/21008.jpg" alt="pokemon11">
+          <img src="./img/21004.jpg" alt="pokemon12">
+          <img src="./img/21016.jpg" alt="pokemon13">
+          <img src="./img/21017.jpg" alt="pokemon14">
+          <img src="./img/21022.jpg" alt="pokemon15">
+          <img src="./img/21024.jpg" alt="pokemon16">
+          <img src="./img/11912.jpg" alt="pokemon17">
+      </div>
+      <div class="picDesc">
+        <h2>For more awesome pokemon world click on the image =></h2>
+      </div>
+      <div class="gallery">
+        <h2>POKEMON GALLERY</h2>
+      </div>
+    <!-- pokemon list generated from ajax-->
+    <div id="list">
 
-     </div>
+    </div>
+    <div class = btn>
+      <h2>For more pokemon gallery click <a href = "file:///Users/ricky/Desktop/dev/Pokemon-app/list.html" target="_blank"><button>Next</button>
+      </a></h2>
+    </div>
+    <div id = "footer">
+      <div>
+        <ul>
+          <li class = about><a href ="#">About us</a></li>
+          <li class = about><a href ="#">Customer Service</a></li>
+          <li class = about><a href ="#">Terms of Use</a></li>
+          <li class = about><a href ="#">FAQ</a></li>
 
-     <div id = "footer">
-       <div>
-         <ul>
-           <li class = about><a href ="#">About us</a></li>
-           <li class = about><a href ="#">Customer Service</a></li>
-           <li class = about><a href ="#">Terms of Use</a></li>
-           <li class = about><a href ="#">FAQ</a></li>
-
-         </ul>
-        <div class="social">
-          <!-- w#schools.com -->
-          <h3>follow us on</h3>
-          <a href="#" class="fa fa-facebook"></a>
-          <a href="#" class="fa fa-twitter"></a>
-          <a href="#" class="fa fa-instagram"></a>
-           <a href="#" class="fa fa-youtube"></a>
-        </div>
+        </ul>
+       <div class="social">
+         <!-- w#schools.com -->
+         <h3>follow us on</h3>
+         <a href="#" class="fa fa-facebook"></a>
+         <a href="#" class="fa fa-twitter"></a>
+         <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-youtube"></a>
        </div>
-     </div>
+      </div>
+    </div>
+    </div>
+
+    </div>
+
   </body>
 </html>
