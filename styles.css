@@ -71,9 +71,7 @@ flex-wrap: wrap;
 .front:hover {
   transform: translate(-10px,-10px);
 }
-.name, .moves{
-  font-family: sans-serif;
-}
+
 .gallery h2 {
   text-align: center;
   background-color: rgba(255,0,0,0.7);
