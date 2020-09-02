@@ -1,11 +1,12 @@
 
 * {
   /* border: 1px solid gold; */
+
   font-family: 'Shadows Into Light', sans serif;
 }
 .container {
-  width: 100%;
-  margin: 0 auto;
+  width: 95%;
+  margin: auto;
   display: flex;
   justify-content: space-around;
 }
@@ -37,7 +38,11 @@ flex-wrap: wrap;
   width: 100%;
 
 }
+.world h2 {
+  text-align: center;
+  background-color: rgba(255,0,0,0.7);
 
+}
 .pics {
   width: 100%;
 
@@ -63,18 +68,65 @@ flex-wrap: wrap;
   width: 50%;
 
 }
+.front:hover {
+  transform: translate(-10px,-10px);
+}
+.name, .moves{
+  font-family: sans-serif;
+}
 .gallery h2 {
   text-align: center;
   background-color: rgba(255,0,0,0.7);
-  color: white;
 }
-.battleground > img{
-  width: 100%;
+
+
+.fa {
+  padding: 3%;
+  font-size: 3vw;
+  width: 8%;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 5%;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  border-radius: 100%;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  border-radius: 100%;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+    border-radius: 100%;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+  border-radius: 100%;
+}
+.about{
+
+  border: 1px solid black;
+display: inline-block;
+padding: 2%;
+background-color: rgba(0,0,0,0.2);
+}
+#footer {
+  margin-top: 1%;
+  border-top: 1px solid black;
 }
 
 @media (min-width: 600px) {
   .container{
     width: 90%;
-    margin: 0 auto;
-  }
+    margin: auto;
+}
 }
