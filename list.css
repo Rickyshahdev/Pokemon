@@ -1,0 +1,17 @@
+#list {
+  list-style: none;
+  column-count: 3;
+  background-color: rgba(0,0,0,0.2);
+
+
+}
+#list >img {
+  width: 50%;
+
+}
+
+.gallery h2 {
+  text-align: center;
+  background-color: rgba(255,0,0,0.7);
+  color: white;
+}

@@ -4,7 +4,8 @@
   font-family: 'Shadows Into Light', sans serif;
 }
 .container {
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-around;
 }
@@ -66,10 +67,17 @@ flex-wrap: wrap;
   text-align: center;
   background-color: rgba(255,0,0,0.7);
   color: white;
-
+}
+.battleground > img{
+  width: 100%;
+}
+.next {
+display: flex;
+justify-content: space-between;
 }
 @media (min-width: 600px) {
-  .banner > img {
-    width: 100%;
+  .container{
+    width: 80%;
+    margin: 0 auto;
   }
 }

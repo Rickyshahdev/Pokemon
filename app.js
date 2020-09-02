@@ -21,7 +21,7 @@ $ (() => {
  })
 
 
-for (let i = 1; i <= 120; i++) {
+for (let i = 1; i <= 9; i++) {
 // loop for iterating over the url
 
  $.ajax({
