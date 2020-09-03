@@ -1,7 +1,7 @@
 $ (() => {
 
 
-  for (let i = 10; i <= 144; i++) {
+  for (let i = 10; i <= 60; i++) {
 
 
    $.ajax({
@@ -27,6 +27,8 @@ $ (() => {
 
    $move3 = $('<li class = moves>').text('Special Attack: '+ (data.moves[2].move.name))
    $('#list').append($move3)
+   $experience = $('<li class = experience>').text('Base Experience: ' + data.base_experience)
+   $('#list').append($experience)
   }
 
 

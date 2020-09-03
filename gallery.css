@@ -8,12 +8,15 @@ body {
 
 
 #list {
+
+  font-weight: bold;
+  font-size: 2.2vw;
   list-style: none;
   column-count: 3;
   background-color: rgba(0,0,0,0.1);
-
-
+  background-position: center;
 }
+
 #list >img {
   width: 50%;
 
@@ -29,9 +32,9 @@ body {
 
 }
 .fa {
-  padding: 3%;
+  padding: 2%;
   font-size: 3vw;
-  width: 8%;
+  width: 6%;
   text-align: center;
   text-decoration: none;
   margin-bottom: 5%;
@@ -42,30 +45,41 @@ body {
 .fa-facebook {
   background: #3B5998;
   color: white;
-  border-radius: 100%;
+
 }
 .fa-twitter {
   background: #55ACEE;
   color: white;
-  border-radius: 100%;
+
 }
 .fa-instagram {
   background: #125688;
   color: white;
-    border-radius: 100%;
+
 }
 
 .fa-youtube {
   background: #bb0000;
   color: white;
-  border-radius: 100%;
-}
-.about{
 
-  border: 1px solid black;
-display: inline-block;
+}
+ul {
+display: flex;
+justify-content: space-evenly;
 padding: 2%;
 background-color: rgba(0,0,0,0.2);
+}
+ul a {
+  text-decoration: none;
+  color: black;
+}
+ul a:hover {
+  text-decoration: underline;
+}
+.social{
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
 }
 #footer {
   margin-top: 1%;
