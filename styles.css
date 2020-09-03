@@ -5,8 +5,7 @@
   font-family: 'Shadows Into Light', sans serif;
 }
 .container {
-  width: 80%;
-  margin: auto;
+  width: 100%;
   display: flex;
   justify-content: space-around;
 }
@@ -27,7 +26,7 @@
   color: rgb(253,207,88);
 }
 .main-content{
-  width: 100%;
+  width: 70%%;
 }
 .banner  {
 display: flex;
@@ -39,6 +38,7 @@ flex-wrap: wrap;
 
 }
 .world h2 {
+  font-size: 2.5vw;
   text-align: center;
   background-color: rgba(255,0,0,0.7);
 
@@ -49,7 +49,7 @@ flex-wrap: wrap;
 }
 .pics > img {
   width:100%;
-  margin-top: 2%;
+
   /* margin-left: 12%; */
   display: none;
 }
@@ -58,6 +58,7 @@ flex-wrap: wrap;
 }
 
 #list {
+  margin: auto;
   list-style: none;
   column-count: 3;
   background-color: rgba(0,0,0,0.2);
@@ -68,11 +69,19 @@ flex-wrap: wrap;
   width: 50%;
 
 }
+.picDesc{
+  font-size: 2.5vw;
+}
+.name, .moves,.experience {
+  font-size: 2.2vw;
+}
+
 .front:hover {
   transform: translate(-10px,-10px);
 }
 
 .gallery h2 {
+  font-size: 2.5vw;
   text-align: center;
   background-color: rgba(255,0,0,0.7);
 }
@@ -120,9 +129,11 @@ background-color: rgba(0,0,0,0.2);
 ul a {
   text-decoration: none;
   color: black;
+  font-size: 1.8vw;
 }
 ul a:hover {
   text-decoration: underline;
+  font-size: 2vw;
 }
 .social{
   width: 90%;
